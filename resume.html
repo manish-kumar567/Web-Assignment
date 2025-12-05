@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile - Manish Kumar</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        :root {
+            --primary-color: #1f2937; 
+            --secondary-color: #3b82f6; 
+            --background-color: #f9fafb; 
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+        }
+
+        .page-container {
+            min-height: 80vh;
+            padding: 2rem 1rem;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .active {
+            opacity: 1;
+        }
+
+        .section-header {
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        
+        @media (min-width: 640px) {
+            .page-container {
+                padding: 4rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <h1 class="text-xl font-bold text-gray-900">Manish Kumar</h1>
+            <nav>
+                <button onclick="showPage('resume')" id="nav-resume"
+                        class="nav-btn bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                    Resume
+                </button>
+                <button onclick="showPage('biodata')" id="nav-biodata"
+                        class="nav-btn ml-3 bg-white border border-gray-300 text-gray-700 hover:bg-gray-100 font-medium py-2 px-4 rounded-lg transition duration-200">
+                    Bio-Data
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="max-w-4xl mx-auto">
+
+        
+        <div id="resume-page" class="page-container active bg-white shadow-xl rounded-2xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8 pb-2 border-b-4 border-blue-500">Professional Resume</h2>
+
+            
+            <section class="mb-10 p-6 bg-gray-50 rounded-xl shadow-inner">
+                <h3 class="text-xl font-semibold mb-3 text-gray-700">Career Objective</h3>
+                <p class="text-gray-600 leading-relaxed">To secure a challenging position in a progressive environment that allows me to utilize my technical and soft skills, providing opportunities for professional growth and contributing positively to the organization's goals.</p>
+            </section>
+
+           
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold section-header pl-4 mb-6">Education & Projects</h3>
+
+                <div class="space-y-6">
+                   
+                    <div class="p-6 border-l-4 border-gray-300 hover:border-blue-500 transition duration-300 bg-white rounded-lg shadow-md">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-xl font-semibold text-gray-900">B.E. / B.Tech (Engineering)</h4>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full">In Progress</span>
+                        </div>
+                        <p class="text-md text-gray-600 mb-3">Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM)</p>
+                        <p class="text-sm text-gray-500">Focus on core engineering principles and project-based learning.</p>
+                    </div>
+
+                    
+                    <div class="p-6 border-l-4 border-gray-300 hover:border-blue-500 transition duration-300 bg-white rounded-lg shadow-md">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-xl font-semibold text-gray-900">Pre-University Course (12th Grade)</h4>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Completed</span>
+                        </div>
+                        <p class="text-md text-gray-600 mb-3">Viveka PU College</p>
+                        <p class="text-sm text-gray-500">Major in Science Stream.</p>
+                    </div>
+                    
+                   
+                    <div class="p-6 border-l-4 border-gray-300 hover:border-blue-500 transition duration-300 bg-white rounded-lg shadow-md">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-xl font-semibold text-gray-900">High School (10th Grade)</h4>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Completed</span>
+                        </div>
+                        <p class="text-md text-gray-600 mb-3">Nirmala English Medium School</p>
+                    </div>
+
+                    
+                    <h4 class="text-xl font-bold pt-6 mb-4 text-gray-900 border-t border-gray-200 mt-8">Key Academic Projects</h4>
+
+                   
+                    <div class="p-4 border-l-4 border-gray-300 bg-gray-50 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-lg text-gray-900">Smart Air Net Project</h5>
+                        <p class="text-sm text-gray-600">A system designed for efficient resource management and networking in a controlled environment, demonstrating IoT and network protocols knowledge.</p>
+                    </div>
+                   
+                    <div class="p-4 border-l-4 border-gray-300 bg-gray-50 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-lg text-gray-900">Attendance Management System</h5>
+                        <p class="text-sm text-gray-600">Developed a robust system to track and manage attendance using front-end technologies and database integration (SQL), improving administrative efficiency.</p>
+                    </div>
+                    
+                    <div class="p-4 border-l-4 border-gray-300 bg-gray-50 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-lg text-gray-900">Parking Management System</h5>
+                        <p class="text-sm text-gray-600">Automated solution for managing parking availability and allocations, utilizing algorithmic logic and interface design.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h3 class="text-2xl font-bold section-header pl-4 mb-6">Technical & Soft Skills</h3>
+                
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">Programming Languages & Frameworks</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                    <span class="skill-tag bg-blue-600 text-white p-2 rounded-full text-center text-sm font-medium">Python (Django/Flask)</span>
+                    <span class="skill-tag bg-blue-600 text-white p-2 rounded-full text-center text-sm font-medium">Java (OOP)</span>
+                    <span class="skill-tag bg-blue-600 text-white p-2 rounded-full text-center text-sm font-medium">C Programming</span>
+                    <span class="skill-tag bg-blue-600 text-white p-2 rounded-full text-center text-sm font-medium">JavaScript (React)</span>
+                </div>
+
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">Web & Database Technologies</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                    <span class="skill-tag bg-green-600 text-white p-2 rounded-full text-center text-sm font-medium">HTML5 & CSS3</span>
+                    <span class="skill-tag bg-green-600 text-white p-2 rounded-full text-center text-sm font-medium">Tailwind CSS</span>
+                    <span class="skill-tag bg-green-600 text-white p-2 rounded-full text-center text-sm font-medium">SQL / MySQL</span>
+                    <span class="skill-tag bg-green-600 text-white p-2 rounded-full text-center text-sm font-medium">Data Structures</span>
+                </div>
+
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">Soft Skills</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <span class="skill-tag bg-gray-600 text-white p-2 rounded-full text-center text-sm font-medium">Communication</span>
+                    <span class="skill-tag bg-gray-600 text-white p-2 rounded-full text-center text-sm font-medium">Teamwork</span>
+                    <span class="skill-tag bg-gray-600 text-white p-2 rounded-full text-center text-sm font-medium">Problem Solving</span>
+                </div>
+            </section>
+
+        </div>
+
+        
+        <div id="biodata-page" class="page-container bg-white shadow-xl rounded-2xl hidden">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8 pb-2 border-b-4 border-blue-500">Personal Bio-Data</h2>
+
+            
+            <section class="mb-10 p-6 bg-blue-50 rounded-xl">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b pb-2">Personal Details</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                    <div class="font-semibold">Full Name:</div><div class="text-gray-800">Manish Kumar</div>
+                    <div class="font-semibold">Father's Name:</div><div class="text-gray-800">Manju</div>
+                    <div class="font-semibold">Date of Birth:</div><div class="text-gray-800">February 24, 2025</div>
+                    <div class="font-semibold">Gender:</div><div class="text-gray-800">Male</div>
+                    <div class="font-semibold">Nationality:</div><div class="text-gray-800">Indian</div>
+                    <div class="font-semibold">Marital Status:</div><div class="text-gray-800">Single</div>
+                </div>
+            </section>
+
+           
+            <section class="mb-10 p-6 bg-gray-50 rounded-xl">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">Languages Known</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-200 text-blue-800 px-4 py-1 rounded-full text-sm font-medium">English</span>
+                    <span class="bg-blue-200 text-blue-800 px-4 py-1 rounded-full text-sm font-medium">Hindi</span>
+                    <span class="bg-blue-200 text-blue-800 px-4 py-1 rounded-full text-sm font-medium">Kannada</span>
+                </div>
+            </section>
+
+            
+            <section class="mb-10 p-6 bg-gray-50 rounded-xl">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">Contact Information</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                    <div class="font-semibold">Phone:</div><div class="text-gray-800">(555) 123-4567</div>
+                    <div class="font-semibold">Email:</div><div class="text-gray-800"><a href="mailto:manish.kumar@example.com" class="text-blue-600 hover:underline">manish.kumar@example.com</a></div>
+                    <div class="font-semibold">LinkedIn:</div><div class="text-gray-800"><a href="#" target="_blank" class="text-blue-600 hover:underline">/in/manish-kumar</a></div>
+                    <div class="font-semibold">Address:</div><div class="text-gray-800">Udupi, Karnataka</div>
+                </div>
+            </section>
+
+        
+            <section class="text-sm mt-8 p-4 border border-gray-300 rounded-lg bg-yellow-50 text-gray-700">
+                <p>I hereby declare that the above-mentioned information is correct to the best of my knowledge and belief.</p>
+                <p class="mt-2 text-right font-medium">Manish Kumar</p>
+            </section>
+
+        </div>
+    </main>
+
+   
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            showPage('resume');
+        });
+
+        function showPage(pageId) {
+            
+            const pages = document.querySelectorAll('.page-container');
+            
+            
+            pages.forEach(page => {
+                page.classList.add('hidden');
+                page.classList.remove('active');
+            });
+
+           
+            const activePage = document.getElementById(pageId + '-page');
+            if (activePage) {
+                activePage.classList.remove('hidden');
+                
+                void activePage.offsetWidth; 
+                activePage.classList.add('active');
+            }
+
+            
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => {
+                const isCurrent = btn.id === `nav-${pageId}`;
+                
+                
+                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white');
+                btn.classList.add('bg-white', 'border', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-100');
+
+                if (isCurrent) {
+                    
+                    btn.classList.remove('bg-white', 'border', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-100');
+                    btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
